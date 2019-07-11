@@ -84,16 +84,40 @@ header, section { width: 100%; }
 	height: 50px;
 }
 
-.nav-image { margin-left: 10px; }
+/* Stretch Goal #4, setting all images as background images in CSS */
+.nav-image 
+{ 
+	/* Must set a width/height or the div will be 0px and won't show up. */
+	width: 183px;
+	height: 36px;
+	
+	background-image: url("../img/logo.png");
+	color: #FFFFFF;
+	margin-left: 10px;
+	vertical-align: middle;
+}
+
+nav
+{
+	background-color: lightgray;
+	
+	/* This is for automatic scrolling and keeping the nav at the top Stretch Goal #1
+	note this will offset the navigation to where it doesn't match up properly in the flow*/
+	position: fixed;
+	top: 0px;
+	left: 0px;
+	z-index: 10;
+	
+}
 
 nav a
 {
 	text-decoration: none;
 	color: #A7A7A7;
 	margin-right: 60px;
+	margin-left: 10px;
+	
 }
-
-.nav-image { vertical-align: middle; }
 
 header
 {
@@ -118,10 +142,22 @@ header h1 { font-size: 72px; }
 	padding: 10px 35px 10px 35px;
 }
 
-.header-image
+/*.header-image
 {
 
 	float: right;
+	margin-right: 10px;
+}*/
+
+/* Stretch Goal #4, setting all images as background images in CSS */
+.header-image 
+{ 
+	/* Must set a width/height or the div will be 0px and won't show up. */
+	width: 379px;
+	height: 379px;
+	
+	background-image: url("../img/header-img.png");
+	color: #FFFFFF;	
 	margin-right: 10px;
 }
 
@@ -163,6 +199,16 @@ section
 	margin-left: 10px;
 }
 
+/* Stretch Goal #4, setting all images as background images in CSS */
+.middle-img
+{
+	/* Must set a width/height or the div will be 0px and won't show up. */
+	width: 876px;
+	height: 182px;
+	background-image: url("../img/mid-page-accent.jpg");
+	color: #FFFFFF;
+}
+
 address p:nth-child(3), address p:nth-child(4)
 {
 	line-height: 2;
@@ -170,6 +216,8 @@ address p:nth-child(3), address p:nth-child(4)
 
 footer
 {
+	/* Stretch Goal #2 on footer using Google Fonts */
+	font-family: 'Aguafina Script'; font-size: 16px;
 	text-align: center;
 	margin: 25px 0px 25px 0px;
 	
