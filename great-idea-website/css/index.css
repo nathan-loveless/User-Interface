@@ -67,34 +67,35 @@ h1, h2, h3, h4, h5 {
 
 body
 {
-	width: 876px;
+	width: 936px;
 	height: auto;
+	margin-left: 75px;
 }
+
+.nav-elements, .nav-image, .header-text, .get-started, .header-image,
+.features, .about, .services, .product, .vision
+{ display: inline-block; }
+
+header, section { width: 100%; }
 
 .nav-elements
 {
 	margin-top: 25px;
-	display: inline-block;
 	height: 50px;
 }
+
+nav a, .nav-image { margin-left: 60px; }
 
 nav a
 {
 	text-decoration: none;
 	color: #A7A7A7;
-	margin-left: 50px;
 }
 
-.nav-image
-{
-	display: inline-block;
-	margin-left: 70px;
-	vertical-align: middle;
-}
+.nav-image { vertical-align: middle; }
 
 header
 {
-	width: 100%;
 	margin-top: 50px;
 	margin-bottom: 50px;
 }
@@ -103,19 +104,15 @@ header
 {
 	width: 40%;
 	text-align: center;
-	display: inline-block;
-	padding: 50px 0 50px 0
+	padding: 50px 0 50px 0;
+	margin-left: 100px;
 }
 
-header h1
-{
-	font-size: 72px;
-}
+header h1 { font-size: 72px; }
 
 .get-started
 {
 	text-align: center;
-	display: inline-block;
 	border: 2px solid black;
 	padding: 10px 35px 10px 35px;
 }
@@ -124,22 +121,42 @@ header h1
 {
 
 	float: right;
-	display: inline-block;
+	margin-right: 10px;
 }
 
-h2
-{
-	font-weight: bold;
+.header-division 
+{ 
+	width: 936px;
+	margin: 100px 0px 25px 0;
+	height: 1px;
+	background-color: #000000;
+	border: 0 none;
 }
 
-.features
+.section-division
 {
-	width: 40%;
-	display: inline-block;
+	width: 936px;
+	margin: 10px 0px 25px 0;
+	height: 1px;
+	background-color: #000000;
+	border: 0 none;
 }
 
-.about
+h2 { font-weight: bold; }
+
+section
 {
-	width: 40%;
-	display: inline-block;
+	font-size: 0;
+}
+
+.features, .about, .services, .product, .vision
+{
+	width: 50%;
+	font-size: 16px;
+	margin: 25px 0px 25px 0px;
+}
+
+.services, .product, .vision
+{
+	width: 31%;
 }
