@@ -65,9 +65,13 @@ h1, h2, h3, h4, h5 {
 
 /* Your code starts here! */
 
+body, .header-division, .section-division
+{
+	width: 876px; /* this is the width of the full middle image */
+}
+
 body
 {
-	width: 876px;
 	height: auto;
 	margin-left: 75px;
 }
@@ -102,7 +106,7 @@ nav
 	background-color: lightgray;
 	
 	/* This is for automatic scrolling and keeping the nav at the top Stretch Goal #1
-	note this will offset the navigation to where it doesn't match up properly in the flow*/
+	note this will offset the navigation to where it doesn't match up properly in the flow */
 	position: fixed;
 	top: 0px;
 	left: 0px;
@@ -142,13 +146,6 @@ header h1 { font-size: 72px; }
 	padding: 10px 35px 10px 35px;
 }
 
-/*.header-image
-{
-
-	float: right;
-	margin-right: 10px;
-}*/
-
 /* Stretch Goal #4, setting all images as background images in CSS */
 .header-image 
 { 
@@ -161,35 +158,26 @@ header h1 { font-size: 72px; }
 	margin-right: 10px;
 }
 
-.header-division 
-{ 
-	width: 876px;
-	margin: 100px 0px 25px 0;
+.header-division, .section-division
+{
 	height: 1px;
 	background-color: #000000;
 	border: 0 none;
+	
 }
 
-.section-division
-{
-	width: 876px;
-	margin: 10px 0px 25px 0;
-	height: 1px;
-	background-color: #000000;
-	border: 0 none;
-}
+.header-division { margin: 100px 0px 25px 0; }
+.section-division { margin: 10px 0px 25px 0; }
 
 h2 { font-weight: bold; }
 
-section
-{
-	font-size: 0;
-}
+/* This zeros out all font sizes and removes white space so 50%/50% width will fit into a 100% width body */
+section { font-size: 0; }
 
 .features, .about, .services, .product, .vision
 {
 	width: 50%;
-	font-size: 16px;
+	font-size: 16px; /* re-establish font size here */
 	margin: 25px 0px 25px 0px;
 }
 
@@ -209,10 +197,8 @@ section
 	color: #FFFFFF;
 }
 
-address p:nth-child(3), address p:nth-child(4)
-{
-	line-height: 2;
-}
+/* Creates a double-spaced line on lines 3 and 4 */
+address p:nth-child(3), address p:nth-child(4) { line-height: 2; }
 
 footer
 {
@@ -221,5 +207,25 @@ footer
 	text-align: center;
 	margin: 25px 0px 25px 0px;
 	
+}
+
+/* Stretch Goal #5 animations on the nav bar buttons*/
+@keyframes button-animation
+{
+	0% { background-color: #62BEFE; }
+  50% { background-color: #A4DAFF; }
+  100% { background-color: #D9EFFF; }
+}
+
+nav a:hover
+{
+	animation-name: button-animation;
+  	animation-duration: 1.5s; 
+	animation-timing-function: ease-out; 
+	animation-delay: 0s;
+	animation-direction: alternate;
+	animation-iteration-count: infinite;
+	animation-fill-mode: none;
+	animation-play-state: running; 
 }
 
