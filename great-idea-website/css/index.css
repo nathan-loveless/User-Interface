@@ -65,7 +65,7 @@ h1, h2, h3, h4, h5 {
 
 /* Your code starts here! */
 
-body, .header-division, .section-division
+body, .header-division, .section-division, .middle-img
 {
 	width: 876px; /* this is the width of the full middle image */
 }
@@ -191,7 +191,6 @@ section { font-size: 0; }
 .middle-img
 {
 	/* Must set a width/height or the div will be 0px and won't show up. */
-	width: 876px;
 	height: 182px;
 	background-image: url("../img/mid-page-accent.jpg");
 	color: #FFFFFF;
