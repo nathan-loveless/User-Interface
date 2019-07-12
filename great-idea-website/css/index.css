@@ -228,3 +228,36 @@ nav a:hover
 	animation-play-state: running; 
 }
 
+.product { margin-left: 10px; }
+
+.product h2
+{
+	text-align: center;
+	margin-top: 10px;
+}
+
+.product-image01, .product-image02, .product-image03
+{
+	width: 100%;
+	height: 156px;
+	color: #FFFFFF;
+	margin-bottom: 10px;
+}
+
+.product-image01 { background-image: url("../img/prod01.jpg"); }
+.product-image02 { background-image: url("../img/prod02.jpg"); }
+.product-image03 { background-image: url("../img/prod03.jpg"); }
+
+.purchase-prod
+{
+	margin-top: 20px;
+	text-align: center;
+	border: 2px solid black;
+	padding: 10px 35px 10px 35px;
+}
+
+.product .purchase-prod:hover
+{
+	border: 4px solid red;
+}
+
