@@ -109,8 +109,8 @@ nav
 	/* This is for automatic scrolling and keeping the nav at the top Stretch Goal #1
 	note this will offset the navigation to where it doesn't match up properly in the flow */
 	position: fixed;
-	/*top: 0px;
-	left: 0px;
+	top: 0px;
+	/*left: 0px;
 	z-index: 10;*/
 	/* fix to be centered with everything else and not interfering*/
 	
